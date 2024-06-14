@@ -6,26 +6,26 @@
 h1 {
   text-align: center;
 }
-.messagecontainer{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size:6vmin ;
-    font-weight: bolder;
-    color: #FA7070;
-    margin-bottom: 5px;
+.messagecontainer {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 6vmin;
+  font-weight: bolder;
+  color: #eef7ff;
+  margin-bottom: 5px;
 }
 
 .container {
   height: 80%;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #A1C398;
-  margin:0 10%
+  background-color: #a1c398;
+  margin: 0 10%;
 }
 .game {
   height: 60vmin;
@@ -35,51 +35,57 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
   gap: 1.5vmin;
-  
- 
 }
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    background-color: #FEFDED;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-    font-size: 8vmin;
-    color: #FA7070;
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  background-color: #fefded;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  font-size: 8vmin;
+  color: #fa7070;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out,
+    transform 0.3s ease-out, opacity 0.3s ease-out;
 }
-.Reset-button{
-    margin-top: 5vmin;
-    margin-left: 5%;
-    margin-bottom: 5vmin;
-    height: 8vmin;
-    width: 17vmin;
-    border-radius: 10px;
-    border: none;
-   font-weight: bold;
-   color: white;
-    background-color: #3d413d;
+
+.box.fade-out {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.Reset-button {
+  margin-top: 5vmin;
+  margin-left: 5%;
+  margin-bottom: 5vmin;
+  height: 8vmin;
+  width: 17vmin;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: #3d413d;
 }
 @media screen and (max-width: 457px) {
-    .Reset-button{
-        margin-top: 15%;
-        margin-left: 5%;
-        height: 8vmin;
-        width: 24vmin;
-        border-radius: 10px;
-    }
-  }
-
-  .new-game{
-    display: none;
-        margin-left: 5%;
+  .Reset-button {
+    margin-top: 15%;
+    margin-left: 5%;
     height: 8vmin;
-    width: 20vmin;
+    width: 24vmin;
     border-radius: 10px;
-    border: none;
-   font-weight: bold;
-   color: white;
-    background-color: #a8650d;
   }
+}
+
+.new-game {
+  display: none;
+  margin-left: 5%;
+  height: 8vmin;
+  width: 20vmin;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: #3d413d;
+}
